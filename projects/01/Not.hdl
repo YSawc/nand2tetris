@@ -8,6 +8,14 @@
  * out = not in
  */
 
+/**
+NOT
+a out
+0 1
+1 0
+*/
+
+
 CHIP Not {
     IN in;
     OUT out;
