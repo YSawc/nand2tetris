@@ -8,6 +8,15 @@
  * out = not (a == b)
  */
 
+/**
+Xor
+a b out
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+*/
+
 CHIP Xor {
     IN a, b;
     OUT out;
