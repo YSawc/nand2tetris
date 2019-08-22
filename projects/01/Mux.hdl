@@ -13,6 +13,19 @@
 Mux
 sel 1 .. out=a
 sel 0 .. out=b
+
+a sel out
+0 0 .. 0
+1 0 .. 1
+0 1 .. 0
+1 1 .. 0
+
+b sel out
+0 0 .. 0
+1 0 .. 1
+1 1 .. 0
+1 1 .. 0
+
 */
 
 CHIP Mux {
@@ -20,5 +33,5 @@ CHIP Mux {
     OUT out;
 
     PARTS:
-    // Put your code here:
+
 }
