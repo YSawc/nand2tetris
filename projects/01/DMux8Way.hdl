@@ -34,5 +34,5 @@ CHIP DMux8Way {
 	And(a=sel[0], b=sel[1], out=And_011_0);
 	And(a=NotSel_100_0, b=NotSel_100_1, out=And_100_0);
 	And(a=sel[0], b=NotSel_101_1, out=And_101_0);
-	And(a=NotSel_110_0, b=sel[1], out=And_101_0);
+	And(a=NotSel_110_0, b=sel[1], out=And_110_0);
 }
