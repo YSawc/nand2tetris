@@ -16,16 +16,16 @@ CHIP DMux8Way {
     OUT a, b, c, d, e, f, g, h;
 
     PARTS:
-	Not(in=sel[0], out=sel_000_0);
-	Not(in=sel[1], out=sel_000_1);
-	Not(in=sel[2], out=sel_000_2);
-	Not(in=sel[1], out=sel_001_1);
-	Not(in=sel[2], out=sel_001_2);
-	Not(in=sel[0], out=sel_010_0);
-	Not(in=sel[2], out=sel_010_2);
-	Not(in=sel[2], out=sel_011_2);
-	Not(in=sel[0], out=sel_100_0);
-	Not(in=sel[1], out=sel_100_1);
-	Not(in=sel[1], out=sel_101_1);
-	Not(in=sel[0], out=sel_110_0);
+	Not(in=sel[0], out=NotSel_000_0);
+	Not(in=sel[1], out=NotSel_000_1);
+	Not(in=sel[2], out=NotSel_000_2);
+	Not(in=sel[1], out=NotSel_001_1);
+	Not(in=sel[2], out=NotSel_001_2);
+	Not(in=sel[0], out=NotSel_010_0);
+	Not(in=sel[2], out=NotSel_010_2);
+	Not(in=sel[2], out=NotSel_011_2);
+	Not(in=sel[0], out=NotSel_100_0);
+	Not(in=sel[1], out=NotSel_100_1);
+	Not(in=sel[1], out=NotSel_101_1);
+	Not(in=sel[0], out=NotSel_110_0);
 }
