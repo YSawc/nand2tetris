@@ -35,4 +35,13 @@ CHIP DMux8Way {
 	And(a=NotSel_100_0, b=NotSel_100_1, out=And_100_0);
 	And(a=sel[0], b=NotSel_101_1, out=And_101_0);
 	And(a=NotSel_110_0, b=sel[1], out=And_110_0);
+	And(a=sel[0], b=sel[1], out=And_111_0);
+	And(a=And_000_0, b=NotSel_000_2, out=And_000_1);
+	And(a=And_001_0, b=NotSel_001_2, out=And_001_1);
+	And(a=And_010_0, b=NotSel_010_2, out=And_010_1);
+	And(a=And_011_0, b=NotSel_011_2, out=And_011_1);
+	And(a=And_100_0, b=sel[2], out=And_100_1);
+	And(a=And_101_0, b=sel[2], out=And_101_1);
+	And(a=And_110_0, b=sel[2], out=And_110_1);
+	And(a=And_111_0, b=sel[2], out=And_110_1);
 }
