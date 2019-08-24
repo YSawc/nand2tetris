@@ -28,4 +28,11 @@ CHIP DMux8Way {
 	Not(in=sel[1], out=NotSel_100_1);
 	Not(in=sel[1], out=NotSel_101_1);
 	Not(in=sel[0], out=NotSel_110_0);
+	And(a=NotSel_000_0, b=NotSel_000_1, out=And_000_0);
+	And(a=sel[0], b=NotSel_001_1, out=And_001_0);
+	And(a=NotSel_010_0, b=sel[1], out=And_010_0);
+	And(a=sel[0], b=sel[1], out=And_011_0);
+	And(a=NotSel_100_0, b=NotSel_100_1, out=And_100_0);
+	And(a=sel[0], b=NotSel_101_1, out=And_101_0);
+	And(a=NotSel_110_0, b=sel[1], out=And_101_0);
 }
