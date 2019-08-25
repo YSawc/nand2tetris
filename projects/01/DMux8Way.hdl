@@ -37,11 +37,19 @@ CHIP DMux8Way {
 	And(a=Notsel:110:0, b=sel[1], out=And:110:0);
 	And(a=sel[0], b=sel[1], out=And:111:0);
 	And(a=And:000:0, b=Notsel:000:2, out=And:000:1);
-	And(a=And:001:0, b=Notsel:001:2, out=And:001:01);
+	And(a=And:001:0, b=Notsel:001:2, out=And:001:1);
 	And(a=And:010:0, b=Notsel:010:2, out=And:010:1);
 	And(a=And:011:0, b=Notsel:011:2, out=And:011:1);
 	And(a=And:100:0, b=sel[2], out=And:100:1);
 	And(a=And:101:0, b=sel[2], out=And:101:1);
 	And(a=And:110:0, b=sel[2], out=And:110:1);
 	And(a=And:111:0, b=sel[2], out=And:111:1);
+	And(a=And:000:1, b=in, out=a);
+	And(a=And:001:1, b=in, out=b);
+	And(a=And:010:1, b=in, out=c);
+	And(a=And:011:1, b=in, out=d);
+	And(a=And:100:1, b=in, out=e);
+	And(a=And:101:1, b=in, out=f);
+	And(a=And:110:1, b=in, out=g);
+	And(a=And:111:1, b=in, out=h);
 }
