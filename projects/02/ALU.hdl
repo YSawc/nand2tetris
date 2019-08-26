@@ -145,4 +145,22 @@ CHIP ALU {
 	Not(in=y[13], out=nyOut13);
 	Not(in=y[14], out=nyOut14);
 	Not(in=y[15], out=nyOut15);
+
+	And(a=no, b=no, out=noAndOut);
+	Not(in=preOut0, out=out[0]);
+	Not(in=preOut1, out=out[1]);
+	Not(in=preOut2, out=out[2]);
+	Not(in=preOut3, out=out[3]);
+	Not(in=preOut4, out=out[4]);
+	Not(in=preOut5, out=out[5]);
+	Not(in=preOut6, out=out[6]);
+	Not(in=preOut7, out=out[7]);
+	Not(in=preOut8, out=out[8]);
+	Not(in=preOut9, out=out[9]);
+	Not(in=preOut10, out=out[10]);
+	Not(in=preOut11, out=out[11]);
+	Not(in=preOut12, out=out[12]);
+	Not(in=preOut13, out=out[13]);
+	Not(in=preOut14, out=out[14]);
+	Not(in=preOut15, out=out[15]);
 }
