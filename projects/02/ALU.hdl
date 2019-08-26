@@ -42,7 +42,7 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-	Nand(a=zx, b=zx, out=zxNandOut);
+	And(a=zx, b=zx, out=zxNandOut);
 	Not(in=x[0], out=xNotOut0);
 	Nand(a=x[0], b=xNotOut0, out=zxOut0);
 	Not(in=x[1], out=xNotOut1);
@@ -76,7 +76,7 @@ CHIP ALU {
 	Not(in=x[15], out=xNotOut15);
 	Nand(a=x[15], b=xNotOut15, out=zxOut15);
 
-	Nand(a=nx, b=nx, out=nxNandOut);
+	And(a=nx, b=nx, out=nxNandOut);
 	Not(in=x[0], out=nxOut0);
 	Not(in=x[1], out=nxOut1);
 	Not(in=x[2], out=nxOut2);
@@ -94,7 +94,7 @@ CHIP ALU {
 	Not(in=x[14], out=nxOut14);
 	Not(in=x[15], out=nxOut15);
 
-	Nand(a=zy, b=zy, out=zxNandOut);
+	And(a=zy, b=zy, out=zxNandOut);
 	Not(in=y[0], out=yNotOut0);
 	Nand(a=y[0], b=yNotOut0, out=zyOut0);
 	Not(in=y[1], out=yNotOut1);
@@ -128,7 +128,7 @@ CHIP ALU {
 	Not(in=y[15], out=yNotOut15);
 	Nand(a=y[15], b=yNotOut15, out=zyOut15);
 
-	Nand(a=ny, b=ny, out=nyNandOut);
+	And(a=ny, b=ny, out=nyNandOut);
 	Not(in=y[0], out=nyOut0);
 	Not(in=y[1], out=nyOut1);
 	Not(in=y[2], out=nyOut2);
