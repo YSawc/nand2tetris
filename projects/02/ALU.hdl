@@ -128,4 +128,21 @@ CHIP ALU {
 	Not(in=y[15], out=yNotOut15);
 	Nand(a=y[15], b=yNotOut15, out=zyOut15);
 
+	Nand(a=ny, b=ny, out=nyNandOut);
+	Not(in=y[0], out=nyOut0);
+	Not(in=y[1], out=nyOut1);
+	Not(in=y[2], out=nyOut2);
+	Not(in=y[3], out=nyOut3);
+	Not(in=y[4], out=nyOut4);
+	Not(in=y[5], out=nyOut5);
+	Not(in=y[6], out=nyOut6);
+	Not(in=y[7], out=nyOut7);
+	Not(in=y[8], out=nyOut8);
+	Not(in=y[9], out=nyOut9);
+	Not(in=y[10], out=nyOut10);
+	Not(in=y[11], out=nyOut11);
+	Not(in=y[12], out=nyOut12);
+	Not(in=y[13], out=nyOut13);
+	Not(in=y[14], out=nyOut14);
+	Not(in=y[15], out=nyOut15);
 }
