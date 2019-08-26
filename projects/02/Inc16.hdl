@@ -13,5 +13,34 @@ CHIP Inc16 {
     OUT out[16];
 
     PARTS:
-   // Put you code here:
-}
+	Not(in=in[0], out=out[0]);
+	HalfAdder(a=in[1], b=in[0], sum=out[1], carry=carry1:0);
+	And(a=in[1], b=carry1:0, out=carry1:1);
+	HalfAdder(a=in[2], b=carry1:1, sum=out[2], carry=carry2:0);
+	And(a=in[2], b=carry2:0, out=carry2:1);
+	HalfAdder(a=in[3], b=carry2:1, sum=out[3], carry=carry3:0);
+	And(a=in[3], b=carry3:0, out=carry3:1);
+	HalfAdder(a=in[4], b=carry3:1, sum=out[4], carry=carry4:0);
+	And(a=in[4], b=carry4:0, out=carry4:1);
+	HalfAdder(a=in[5], b=carry4:1, sum=out[5], carry=carry5:0);
+	And(a=in[5], b=carry5:0, out=carry5:1);
+	HalfAdder(a=in[6], b=carry5:1, sum=out[6], carry=carry6:0);
+	And(a=in[6], b=carry6:0, out=carry6:1);
+	HalfAdder(a=in[7], b=carry6:1, sum=out[7], carry=carry7:0);
+	And(a=in[7], b=carry7:0, out=carry7:1);
+	HalfAdder(a=in[8], b=carry7:1, sum=out[8], carry=carry8:0);
+	And(a=in[8], b=carry8:0, out=carry8:1);
+	HalfAdder(a=in[9], b=carry8:1, sum=out[9], carry=carry9:0);
+	And(a=in[9], b=carry9:0, out=carry9:1);
+	HalfAdder(a=in[10], b=carry9:1, sum=out[10], carry=carry10:0);
+	And(a=in[10], b=carry10:0, out=carry10:1);
+	HalfAdder(a=in[11], b=carry10:1, sum=out[11], carry=carry11:0);
+	And(a=in[11], b=carry11:0, out=carry11:1);
+	HalfAdder(a=in[12], b=carry11:1, sum=out[12], carry=carry12:0);
+	And(a=in[12], b=carry12:0, out=carry12:1);
+	HalfAdder(a=in[13], b=carry12:1, sum=out[13], carry=carry13:0);
+	And(a=in[13], b=carry13:0, out=carry13:1);
+	HalfAdder(a=in[14], b=carry13:1, sum=out[14], carry=carry14:0);
+	And(a=in[14], b=carry14:0, out=carry14:1);
+	HalfAdder(a=in[15], b=carry14:1, sum=out[15], carry=carry15:0);
+	}
