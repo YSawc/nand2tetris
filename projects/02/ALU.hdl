@@ -42,36 +42,37 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
+	Nand(a=zx, b=zx, out=zxNandOut);
 	Not(in=x[0], out=xNotOut0);
-	Nand(a=x[0], b=xNotOut0, out=x[0]);
+	Nand(a=x[0], b=xNotOut0, out=zxOut0);
 	Not(in=x[1], out=xNotOut1);
-	Nand(a=x[1], b=xNotOut1, out=x[1]);
+	Nand(a=x[1], b=xNotOut1, out=zxOut1);
 	Not(in=x[2], out=xNotOut2);
-	Nand(a=x[2], b=xNotOut2, out=x[2]);
+	Nand(a=x[2], b=xNotOut2, out=zxOut2);
 	Not(in=x[3], out=xNotOut3);
-	Nand(a=x[3], b=xNotOut3, out=x[3]);
+	Nand(a=x[3], b=xNotOut3, out=zxOut3);
 	Not(in=x[4], out=xNotOut4);
-	Nand(a=x[4], b=xNotOut4, out=x[4]);
+	Nand(a=x[4], b=xNotOut4, out=zxOut4);
 	Not(in=x[5], out=xNotOut5);
-	Nand(a=x[5], b=xNotOut5, out=x[5]);
+	Nand(a=x[5], b=xNotOut5, out=zxOut5);
 	Not(in=x[6], out=xNotOut6);
-	Nand(a=x[6], b=xNotOut6, out=x[6]);
+	Nand(a=x[6], b=xNotOut6, out=zxOut6);
 	Not(in=x[7], out=xNotOut7);
-	Nand(a=x[7], b=xNotOut7, out=x[7]);
+	Nand(a=x[7], b=xNotOut7, out=zxOut7);
 	Not(in=x[8], out=xNotOut8);
-	Nand(a=x[8], b=xNotOut8, out=x[8]);
+	Nand(a=x[8], b=xNotOut8, out=zxOut8);
 	Not(in=x[9], out=xNotOut9);
-	Nand(a=x[9], b=xNotOut9, out=x[9]);
+	Nand(a=x[9], b=xNotOut9, out=zxOut9);
 	Not(in=x[10], out=xNotOut10);
-	Nand(a=x[10], b=xNotOut10, out=x[10]);
+	Nand(a=x[10], b=xNotOut10, out=zxOut10);
 	Not(in=x[11], out=xNotOut11);
-	Nand(a=x[11], b=xNotOut11, out=x[11]);
+	Nand(a=x[11], b=xNotOut11, out=zxOut11);
 	Not(in=x[12], out=xNotOut12);
-	Nand(a=x[12], b=xNotOut12, out=x[12]);
+	Nand(a=x[12], b=xNotOut12, out=zxOut12);
 	Not(in=x[13], out=xNotOut13);
-	Nand(a=x[13], b=xNotOut13, out=x[13]);
+	Nand(a=x[13], b=xNotOut13, out=zxOut13);
 	Not(in=x[14], out=xNotOut14);
-	Nand(a=x[14], b=xNotOut14, out=x[14]);
+	Nand(a=x[14], b=xNotOut14, out=zxOut14);
 	Not(in=x[15], out=xNotOut15);
-	Nand(a=x[15], b=xNotOut15, out=x[15]);
+	Nand(a=x[15], b=xNotOut15, out=zxOut15);
 }
