@@ -42,7 +42,7 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-	And(a=zx, b=zx, out=zxNandOut);
+	And(a=zx, b=zx, out=zxAndOut);
 	Not(in=x[0], out=xNotOut0);
 	Nand(a=x[0], b=xNotOut0, out=zxOut0);
 	Not(in=x[1], out=xNotOut1);
