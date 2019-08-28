@@ -58,4 +58,7 @@ CHIP ALU {
 
 	Not16(in=fOut, out=noNot16Out);
 	Mux16(a=fOut, b=noNot16Out, out=out[0..15]);
+
+	Or16Way(in=out[0..15], out=zrOr16Way);
+	Mux16(a=out[0..15], b=zrOr16Way, out=zrOut);
 }
