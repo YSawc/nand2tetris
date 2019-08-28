@@ -44,43 +44,11 @@ CHIP ALU {
     PARTS:
 	Mux16(a=x[0..15], b[0..15]=false, sel=zx, out=zxOut);
 
-	And(a=nx, b=nx, out=nxNandOut);
-	Not(in=x[0], out=nxOut0);
-	Not(in=x[1], out=nxOut1);
-	Not(in=x[2], out=nxOut2);
-	Not(in=x[3], out=nxOut3);
-	Not(in=x[4], out=nxOut4);
-	Not(in=x[5], out=nxOut5);
-	Not(in=x[6], out=nxOut6);
-	Not(in=x[7], out=nxOut7);
-	Not(in=x[8], out=nxOut8);
-	Not(in=x[9], out=nxOut9);
-	Not(in=x[10], out=nxOut10);
-	Not(in=x[11], out=nxOut11);
-	Not(in=x[12], out=nxOut12);
-	Not(in=x[13], out=nxOut13);
-	Not(in=x[14], out=nxOut14);
-	Not(in=x[15], out=nxOut15);
+	Mux16(a=x[0..15], b[0..15]=!x, sel=nx, out=nxOut);
 
 	Mux16(a=y[0..15], b[0..15]=false, sel=zy, out=zxOut);
 
-	And(a=ny, b=ny, out=nyNandOut);
-	Not(in=y[0], out=nyOut0);
-	Not(in=y[1], out=nyOut1);
-	Not(in=y[2], out=nyOut2);
-	Not(in=y[3], out=nyOut3);
-	Not(in=y[4], out=nyOut4);
-	Not(in=y[5], out=nyOut5);
-	Not(in=y[6], out=nyOut6);
-	Not(in=y[7], out=nyOut7);
-	Not(in=y[8], out=nyOut8);
-	Not(in=y[9], out=nyOut9);
-	Not(in=y[10], out=nyOut10);
-	Not(in=y[11], out=nyOut11);
-	Not(in=y[12], out=nyOut12);
-	Not(in=y[13], out=nyOut13);
-	Not(in=y[14], out=nyOut14);
-	Not(in=y[15], out=nyOut15);
+	Mux16(a=y[0..15], b[0..15]=!y, sel=ny, out=nyOut);
 
 	And(a=no, b=no, out=noAndOut);
 	Not(in=preOut0, out=out[0]);
