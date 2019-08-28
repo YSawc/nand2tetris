@@ -52,8 +52,7 @@ CHIP ALU {
 	Not16(in=zyOut, out=zyNot16Out);
 	Mux16(a=y, b=zyNot16Out, sel=ny, out=nyOut);
 
-	Add16(a=x[0..15], b=y[0..15], out=fAdd16Out);
-	And16(a=x[0..15], b=y[0..15], out=fAnd16Out);
+	And16(a=x, b=y, out=fAnd16Out);
 	Mux16(a=fAndOut, b=fAnd16Out, sel=f, out=fOut);
 
 	Not(in=out[0], out=zr0);
