@@ -61,4 +61,7 @@ CHIP ALU {
 
 	Or16Way(in=out[0..15], out=zrOr16Way);
 	Mux16(a=out[0..15], b=zrOr16Way, out=zrOut);
+
+	HalfAdder(a=fAdd16Out, b=fAnd16Out, out=ng);
+	Mux16(a=true, b=false, sel=out[15] out=ng);
 }
