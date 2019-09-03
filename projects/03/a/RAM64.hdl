@@ -21,7 +21,8 @@ CHIP RAM64 {
 	*/
 
     PARTS:
-	DMux8Way(in=load, sel=address[3..5], a=aDMux8Way, b=bDMux8Way, c=cDMux8Way, d=dDMux8Way,
+	DMux8Way(in=load, sel=address[3..5],
+			a=aDMux8Way, b=bDMux8Way, c=cDMux8Way, d=dDMux8Way,
 			e=eDMux8Way, f=fDMux8Way, g=gDMux8Way, h=hDMux8Way);
 	RAM8(in=in, load=aDMux8Way, address=address[0..2], out=aRAM8);
 	RAM8(in=in, load=bDMux8Way, address=address[0..2], out=bRAM8);
