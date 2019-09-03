@@ -13,6 +13,12 @@
 CHIP RAM64 {
     IN in[16], load, address[6];
     OUT out[16];
+	/**
+	TIP: 6 bit resister RAM
+	xxxyyy
+	xxx: select one of RAM8
+	yyy: select resister of RAM8 picked by xxx
+	*/
 
     PARTS:
     // Put your code here:
