@@ -22,3 +22,7 @@ CHIP PC {
 
 	Register(in=AddOut, load=regRoad, out=registerOut);
 }
+
+	Mux(a=toBit, b=inc, sel=inc, out=M1);
+	Mux(a=M1, b=load, sel=load, out=M2);
+	Mux(a=M2, b=reset, sel=reset, out=M3);
