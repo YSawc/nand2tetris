@@ -16,7 +16,7 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-	Inc16(in=int, out=Inc16Out);
+	Inc16(in=inc, out=Inc16Out);
 
 	Add(a=in, b=Inc16Out, out=AddOut)
 
