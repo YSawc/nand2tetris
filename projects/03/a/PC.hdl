@@ -23,6 +23,6 @@ CHIP PC {
 	Mux16(a=m1, b=in, sel=load, out=m2);
 	Mux16(a=m2, b=false, sel=reset, out=m3);
 
-	Register(in=AddOut, load=regRoad, out=registerOut);
+	Register(in=m3, load=true, out=registerOut);
 
 }
