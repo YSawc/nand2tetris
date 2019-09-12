@@ -24,4 +24,5 @@ CHIP PC {
 
 	Register(in=m3, load=true, out=registerOut);
 
+	Or16(a=false, b=registerOut, out=out);
 }
