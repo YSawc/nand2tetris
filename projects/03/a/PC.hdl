@@ -19,10 +19,10 @@ CHIP PC {
 	Inc16(in=inc, out=Inc16Out);
 
 	Add(a=in, b=Inc16Out, out=AddOut)
+	Mux16(a=registerOut, b=inc16Out, sel=inc, out=m1);
+	Mux16(a=m1, b=in, sel=load, out=m2);
+	Mux16(a=m2, b=false, sel=reset, out=m3);
 
 	Register(in=AddOut, load=regRoad, out=registerOut);
 
-	Mux(a=toBit, b=inc, sel=inc, out=M1);
-	Mux(a=M1, b=load, sel=load, out=M2);
-	Mux(a=M2, b=reset, sel=reset, out=M3);
 }
