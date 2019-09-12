@@ -16,5 +16,6 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
+	Inc16(in=int, out=Inc16Out);
 	Register(in=AddOut, load=regRoad, out=registerOut);
 }
