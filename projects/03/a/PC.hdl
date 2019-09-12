@@ -16,7 +16,7 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-	Inc16(in=inc, out=Inc16Out);
+	Inc16(in=registerOut, out=inc16Out);
 
 	Mux16(a=registerOut, b=inc16Out, sel=inc, out=m1);
 	Mux16(a=m1, b=in, sel=load, out=m2);
