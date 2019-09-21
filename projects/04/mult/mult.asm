@@ -8,11 +8,21 @@
 
 // Put your code here.
 
-@R0
-D=M
-@R1
-A=M
-@R2
-0;JMP
+	@R2
+	M=0
+(LOOP)
+	@R1
+	D=M
+	@END
+	D;JGE // if 0 jump END
+	@R0
+	D=M
+	@R2
+	M=D+M
+	@R1
+	M=M-1
+	@LOOP
+	0;JMP // Jump to LOOP
 (END)
-0;JMP
+	@END
+	0;JMP // Jump to END
