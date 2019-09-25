@@ -14,6 +14,11 @@
 
 // Put your code here.
 
+
+(KBD)
+	@KBD
+	D=M
+
 (WHITE)
 	@SCREEN
 	M=0
@@ -22,7 +27,5 @@
 	@SCREEN
 	M=1
 
-(KBD)
-	@KBD
 	D=M
 
