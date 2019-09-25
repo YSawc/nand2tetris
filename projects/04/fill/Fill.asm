@@ -22,3 +22,7 @@
 	@SCREEN
 	M=1
 
+(KBD)
+	@KBD
+	D=M
+
