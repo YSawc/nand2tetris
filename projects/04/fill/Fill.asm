@@ -16,6 +16,10 @@
 (KBD)
 	@KBD
 	D=M
+	@WHITE
+	D;JEQ
+	@BLACK
+	D;JGT
 
 (WHITE)
 	@SCREEN
