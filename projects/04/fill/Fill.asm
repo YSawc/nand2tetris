@@ -14,6 +14,13 @@
 // Put your code here.
 
 (KBD)
+	@8192
+	D=M
+	@16384
+	D=M+D
+	@LASTSCREENADDRESS
+	M=D
+
 	@KBD
 	D=M
 	@WHITE
