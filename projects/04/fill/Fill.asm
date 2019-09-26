@@ -16,7 +16,7 @@
 (KBD)
 	@8192
 	D=M
-	@16384
+	@addr
 	D=M+D
 	@LASTSCREENADDRESS
 	M=D
