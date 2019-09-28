@@ -24,7 +24,15 @@
 	@BLACK // if user input == 1 .. goto BLACK
 	D;JGT
 
+	(WHITE)
+		@color
+		M=0
+		@COLORSCREEN
+		0;JMP
 
+	(BLACK)
+		@color
+		M=-1
 
 	@LOOP
 	0;JMP
