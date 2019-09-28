@@ -13,6 +13,7 @@
 
 // Put your code here.
 
+(LOOP)
 	@addr
 	M=D
 
@@ -22,3 +23,5 @@
 
 
 
+	@LOOP
+	0;JMP
