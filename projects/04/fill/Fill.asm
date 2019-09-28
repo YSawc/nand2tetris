@@ -37,5 +37,9 @@
 	(COLORSCREEN)
 		@color
 		D=M
+		@addr
+		A=M
+		M=D
+
 	@LOOP
 	0;JMP
