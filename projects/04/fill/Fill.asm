@@ -35,5 +35,7 @@
 		M=-1
 
 	(COLORSCREEN)
+		@color
+		D=M
 	@LOOP
 	0;JMP
