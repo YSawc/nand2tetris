@@ -14,6 +14,8 @@
 // Put your code here.
 
 (LOOP)
+	@SCREEN // first pixel
+	D=A
 	@addr
 	M=D
 
