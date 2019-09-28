@@ -13,28 +13,12 @@
 
 // Put your code here.
 
-(KBD)
-	@8192
-	D=M
 	@addr
-	D=M+D
-	@LASTSCREENADDRESS
 	M=D
 
 	@KBD
 	D=M
-	@WHITE
-	D;JEQ
-	@BLACK
 	D;JGT
 
-(WHITE)
-	@SCREEN
-	M=0
 
-(BLACK)
-	@SCREEN
-	M=1
-
-	D=M
 
