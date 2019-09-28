@@ -41,5 +41,16 @@
 		A=M
 		M=D
 
+		D=A+1
+		@32
+		D=D+A
+		@addr
+		M=D
+
+		@24576 // 16384 + 32*16
+		D=D-A
+		@COLORSCREEN
+		D;JLT
+
 	@LOOP
 	0;JMP
