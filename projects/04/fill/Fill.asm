@@ -21,6 +21,7 @@
 
 	@KBD
 	D=M
+	@BLACK // if user input == 1 .. goto BLACK
 	D;JGT
 
 
