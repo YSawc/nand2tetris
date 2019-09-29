@@ -16,4 +16,7 @@ CHIP RAM512 {
 
     PARTS:
     // Put your code here:
-}
+}	DMux8Way(in=load, sel=address[6..8],
+	DMux8Way(in=load, sel=address[6..8],
+			a=aDMux64Way, b=bDMux64Way, c=cDMux64Way, d=dDMux64Way,
+			e=eDMux64Way, f=fDMux64Way, g=gDMux64Way, h=hDMux64Way);
